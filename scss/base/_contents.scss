@@ -1,0 +1,19 @@
+/*Contents*/
+
+img {
+    width: 100%;
+}
+
+a:hover, button:hover{
+    cursor: pointer;
+}
+
+.subtitle{
+    padding: 0.2em 0;
+    width: 100%;
+
+    h2{
+        text-align: center;
+        color: $color-secondary;
+    }
+}
