@@ -1,7 +1,11 @@
-import {fingerprint} from './fingerprint.js';
-import {CPU} from './fingerprint.js';
-import {OS} from './fingerprint.js';
-import {userAgent} from './fingerprint.js';
+import {getFingerprint} from './fingerprint.js';
+import {getCpu} from './fingerprint.js';
+import {getOs} from './fingerprint.js';
+import {getUserAgent} from './fingerprint.js';
+getFingerprint(fingerprint);
+getCpu(CPU);
+getOs(OS);
+getUserAgent(userAgent);
 
 export  const submitForm = () => { 
     const sendButton = document.querySelector(".crud__store-button");
