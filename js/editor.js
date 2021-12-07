@@ -1,5 +1,3 @@
-import ClassicEditor from '../node_modules/@ckeditor/ckeditor5-build-classic';
-
 export const editor = () => {
  ClassicEditor
 	.create( document.querySelector( '#editor' ) )
