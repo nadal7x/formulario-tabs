@@ -17,3 +17,9 @@ a:hover, button:hover{
         color: $color-secondary;
     }
 }
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 20vh;
+}
