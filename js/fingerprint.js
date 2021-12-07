@@ -24,4 +24,5 @@ export const getUserAgent = () => {
     var userAgent = client.getUserAgent();
     return userAgent;
     
+    
 }
