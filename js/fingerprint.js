@@ -1,5 +1,6 @@
 import ClientJS from '../node_modules/clientjs/src/client.js';
 const client = new ClientJS();
+///////////
 
 export const getFingerprint = () => {  
 
@@ -23,6 +24,6 @@ export const getUserAgent = () => {
 
     var userAgent = client.getUserAgent();
     return userAgent;
-    
+
     
 }
