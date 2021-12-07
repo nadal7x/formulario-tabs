@@ -77,28 +77,26 @@
 
     .crud{
         display: block;
+        .crud__table, .crud__form{
+            min-width: 100%;
+            max-width: 100%;
+        }
+        .crud__table{
+            margin-bottom: 2em;
+            th{
+                font-size: 1em;
+            }
+            td{
+                font-size: 0.9em;
+            }
+        }
+        .crud__store-button{
+            font-size: 1em;
+            margin-top: 0.5em;
+        }
     }
 
-    .crud__table, .crud__form{
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-    .crud__table{
-        margin-bottom: 2em;
-    }
-
-    .crud__table table th{
-        font-size: 1em;
-    }
-    .crud__table table td{
-        font-size: 0.9em;
-    }
-
-    .crud__store-button{
-        font-size: 1em;
-        margin-top: 0.5em;
-    }
+    
 }
 
 @media (min-width: 1920px) {
