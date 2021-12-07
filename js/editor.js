@@ -1,4 +1,4 @@
-import ClassicEditor from './node_modules/@ckeditor/ckeditor5-build-classic';
+import ClassicEditor from '../node_modules/@ckeditor/ckeditor5-build-classic';
 
 
 ClassicEditor
