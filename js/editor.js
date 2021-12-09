@@ -1,6 +1,6 @@
-export const editor = () => {
+export const editorArea = () => {
     let editors = document.querySelectorAll( '.editor' );
-    var editor = [];
+    window.editor = [];
     editors.forEach(element =>   
         ClassicEditor
             .create( element, {
