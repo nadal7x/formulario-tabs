@@ -1,4 +1,4 @@
-import * as AllFingerprint from './info.js';
+import * as AllFingerprint from './collector.js';
 AllFingerprint.getFingerprint();
 AllFingerprint.getCpu();
 AllFingerprint.getOs();
@@ -24,6 +24,7 @@ export  const submitForm = () => {
         console.log( 'CPU, ' + CPU );
         console.log( 'OS, ' + OS );
         console.log( 'user Agent, ' + userAgent );
+        console.log( 'Comentario, ' + editor.getData())
     
     });
 }

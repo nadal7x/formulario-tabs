@@ -2,26 +2,25 @@ const client = new ClientJS();
 
 export const getFingerprint = () => {  
 
-    var fingerprint = client.getFingerprint();
+    let fingerprint = client.getFingerprint();
     return fingerprint
 
 }
 export const getCpu = () => { 
 
-    var CPU = client.getCPU();
+    let CPU = client.getCPU();
     return CPU;
 
 }
 export const getOs = () => { 
 
-    var OS = client.getOS();
+    let OS = client.getOS();
     return OS;
 
 }
 export const getUserAgent = () => { 
 
-    var userAgent = client.getUserAgent();
+    let userAgent = client.getUserAgent();
     return userAgent;
-
-    
+ 
 }
