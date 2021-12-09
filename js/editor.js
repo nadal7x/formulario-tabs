@@ -1,9 +1,9 @@
 export const editorArea = () => {
     let editors = document.querySelector( '.editors' );
     window.editor = [];
-    editors.forEach( function(element, index) {
+    editors.forEach( function(element) {
         ClassicEditor
-            .create( document.querySelector( '#editor' + index ), {
+            .create( document.querySelector( element ), {
                 toolbar: {
                     items: [
                         'bold',
