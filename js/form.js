@@ -1,4 +1,4 @@
-import * as AllFingerprint from './fingerprint.js';
+import * as AllFingerprint from './info.js';
 AllFingerprint.getFingerprint();
 AllFingerprint.getCpu();
 AllFingerprint.getOs();
