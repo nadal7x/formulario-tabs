@@ -1,4 +1,4 @@
-export const editor = () => {
+export const editorArea = () => {
     let editors = document.querySelector( '.editors' );
     window.editor = [];
     editors.forEach( function(element, index) {
