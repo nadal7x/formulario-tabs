@@ -1,33 +1,29 @@
-export const editorArea = () => {
-    let editors = document.querySelectorAll( '.editor' );
-    window.editor = [];
-    editors.forEach( function(element, index) {
-        ClassicEditor
-            .create( document.querySelector( '#editor' + index ), {
-                toolbar: {
-                    items: [
-                        'bold',
-                        'italic',
-                        'link',
-                        'bulletedList',
-                        'numberedList',
-                        '|',
-                        'outdent',
-                        'indent',
-                        '|',
-                        'blockQuote',
-                        'undo',
-                        'redo'
-                    ]
-                },
-                language: 'es',
-                licenseKey: '',
-            } )
-            .then( newEditor => {
-                window.editor.push(newEditor);
-            } )
-            .catch( error => {
-                console.error( 'There was a problem initializing the editor.', error );
-            } );
-    });
+export const editor = () => {
+ ClassicEditor
+	.create( document.querySelector( '.editor' ), {
+        toolbar: {
+            items: [
+                'bold',
+                'italic',
+                'link',
+                'bulletedList',
+                'numberedList',
+                '|',
+                'outdent',
+                'indent',
+                '|',
+                'blockQuote',
+                'undo',
+                'redo'
+            ]
+        },
+        language: 'es',
+        licenseKey: '',
+    } )
+	.then( editor => {
+		window.editor = editor;
+	} )
+	.catch( error => {
+		console.error( 'There was a problem initializing the editor.', error );
+    } );
 }
