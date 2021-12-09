@@ -21,6 +21,6 @@ export  const submitForm = () => {
         console.log( 'OS, ' + AllFingerprint.getOs());
         console.log( 'user Agent, ' + AllFingerprint.getUserAgent());
         console.log( 'Texto, ' + editor[0].getData());
-        console.log( 'Comentario, ' + editor[].getData());
+        console.log( 'Comentario, ' + editor[1].getData());
     });
 }
