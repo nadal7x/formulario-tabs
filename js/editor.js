@@ -1,4 +1,4 @@
-export const editor = () => {
+export const editorArea = () => {
  ClassicEditor
 	.create( document.querySelector( '.editor' ), {
         toolbar: {
