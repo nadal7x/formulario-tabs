@@ -23,8 +23,8 @@ export const editor = () => {
                 language: 'es',
                 licenseKey: '',
             } )
-            .then( element => {
-                editor.push = element;
+            .then( newEditor => {
+                editor.push = newEditor;
             } )
             .catch( error => {
                 console.error( 'There was a problem initializing the editor.', error );
