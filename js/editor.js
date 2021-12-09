@@ -1,7 +1,7 @@
 export const editorArea = () => {
     let editors = document.querySelector( '.editors' );
     window.editor = [];
-    editors.forEach( function(element) {
+    editors.forEach( element => {
         ClassicEditor
             .create( document.querySelector( element ), {
                 toolbar: {
