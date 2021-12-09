@@ -18,9 +18,9 @@ export  const submitForm = () => {
 
         console.log( 'fingerprint, ' + AllFingerprint.getFingerprint());
         console.log( 'CPU, ' + AllFingerprint.getCpu());
-        console.log( 'OS, ' + AllFingerprint.getOs);
+        console.log( 'OS, ' + AllFingerprint.getOs());
         console.log( 'user Agent, ' + AllFingerprint.getUserAgent());
-        console.log( 'Comentario, ' + editor.getData());
+        console.log( 'Comentario, ' + editor.getData().textContent);
     
     });
 }
