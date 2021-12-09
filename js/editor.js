@@ -1,6 +1,6 @@
 export const editor = () => {
     let editors = document.querySelectorAll( '.editor' );
-    let editor = [];
+    var editor = [];
     editors.forEach(element =>   
         ClassicEditor
             .create( element, {
