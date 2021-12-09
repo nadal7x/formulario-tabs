@@ -1,5 +1,6 @@
 export const editor = () => {
     let editors = document.querySelectorAll( '.editor' );
+    let editor = [];
     editors.forEach(element =>   
         ClassicEditor
             .create( element, {
@@ -23,7 +24,7 @@ export const editor = () => {
                 licenseKey: '',
             } )
             .then( editor => {
-                window.editor = editor;
+                editor.push = element;
             } )
             .catch( error => {
                 console.error( 'There was a problem initializing the editor.', error );
