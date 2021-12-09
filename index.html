@@ -78,9 +78,12 @@
                                       <p>Tienda</p>
                                     </button>
                                     <button class="tablinks" data-tab="tab3">
-                                        <p>Texto</p>
+                                        <p>Selectores</p>
                                     </button>
                                     <button class="tablinks" data-tab="tab4">
+                                        <p>Texto</p>
+                                    </button>
+                                    <button class="tablinks" data-tab="tab5">
                                         <p>Comentario</p>
                                     </button>
                                </div>
@@ -129,18 +132,96 @@
                                         </div>
 
                                     </div>
-
                                     <div id="tab3" class="tabcontent">
-            
                                         <div class="crud__form-element">
-                                            <textarea class="editor" #id="editor0" placeholder="Escribe aquí..."></textarea>
+                                            <div class="crud__form-label">
+                                                <label for="escoge">Escoge</label>
+                                            </div>
+                                            <div class="crud__form-input">
+                                                <select name="escoge">
+                                                    <option value="aficiones">Aficiones</option>
+                                                    <option value="localidades">Localidades</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="crud__form-element hidden-element aficiones">
+                                            <div class="crud__form-label">
+                                                <label for="aficiones">Aficiones</label>
+                                            </div>
+                                            <div class="crud__form-input">
+                                                <select name="aficiones">
+                                                    <option value="deportes">Deportes</option>
+                                                    <option value="materias">Materias</option>
+                                                    <option value="musica">Musica</option>
+                                                    <option value="vehiculos" >Vehiculos</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="crud__form-element aficiones">
+                                            <div class="crud__form-label">
+                                                <label for="respuesta-aficiones">Que prefieres?</label>
+                                            </div>
+                                            <div class="crud__form-input">
+                                                <select name="respuesta-aficiones" id="selectChange"> 
+                                                    <option value=""></option>
+                                                    <option value="" ></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="crud__form-element localidades">
+                                            <div class="crud__form-label">
+                                                <label for="localidades">Localidades</label>
+                                            </div>
+                                            <div class="crud__form-input">
+                                                <select name="localidades">
+                                                    <option value="mallorca">Mallorca</option>
+                                                    <option value="menorca">Menorca</option>
+                                                    <option value="ibiza">Ibiza</option>
+                                                    <option value="formentera" >Formentera</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="crud__form-element localidades">
+                                            <div class="crud__form-label">
+                                                <label for="respuesta-localidades">Donde vas a ir?</label>
+                                            </div>
+                                            <div class="crud__form-input">
+                                                <select name="respuesta-localidades" id="selectChange"> 
+                                                    <option class="related-options" dataset-option="mallorca" value="palma">Palma</option>
+                                                    <option class="related-options" dataset-option="mallorca" value="inca">Inca</option>
+                                                    <option class="related-options" dataset-option="mallorca" value="santanyi">Santanyi</option>
+                                                    <option class="related-options" dataset-option="mallorca" value="manacor">Manacor</option>
+                                                    <option class="related-options" dataset-option="menorca" value="ciutadella">Ciutadella</option>
+                                                    <option class="related-options" dataset-option="menorca" value="ferreries">Ferreries</option>
+                                                    <option class="related-options" dataset-option="menorca" value="mercadal">Es Mercadal</option>
+                                                    <option class="related-options" dataset-option="menorca" value="mahon">Mahon</option>
+                                                    <option class="related-options" dataset-option="ibiza" value="eivissa">Eivissa</option>
+                                                    <option class="related-options" dataset-option="ibiza" value="sant-josep">Sant Josep de Sa Talaia</option>
+                                                    <option class="related-options" dataset-option="ibiza" value="sant-antoni">Sant Antoni de Portmany</option>
+                                                    <option class="related-options" dataset-option="ibiza" value="santa-eularia">Santa Eulària des Riu</option>
+                                                    <option class="related-options" dataset-option="formentera" value="es-calo">Es Caló</option>
+                                                    <option class="related-options" dataset-option="formentera" value="pujols">Es Pujols</option>
+                                                    <option class="related-options" dataset-option="formentera" value="savina">La Savina</option>
+                                                </select>
+                                            </div>
                                         </div>
 
                                     </div>
+
                                     <div id="tab4" class="tabcontent">
             
                                         <div class="crud__form-element">
-                                            <textarea class="editor" #id="editor1" placeholder="Escribe aquí..."></textarea>
+                                            <textarea class="ckeditor" name="texto" placeholder="Escribe aquí..."></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div id="tab5" class="tabcontent">
+            
+                                        <div class="crud__form-element">
+                                            <textarea class="ckeditor" name="comentario" placeholder="Escribe aquí..."></textarea>
                                         </div>
 
                                     </div>
