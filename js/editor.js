@@ -23,7 +23,7 @@ export const editor = () => {
                 language: 'es',
                 licenseKey: '',
             } )
-            .then( editor => {
+            .then( element => {
                 editor.push = element;
             } )
             .catch( error => {
