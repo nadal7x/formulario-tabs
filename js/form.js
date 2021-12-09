@@ -1,8 +1,4 @@
 import * as AllFingerprint from './collector.js';
-AllFingerprint.getFingerprint();
-AllFingerprint.getCpu();
-AllFingerprint.getOs();
-AllFingerprint.getUserAgent();
 
 export  const submitForm = () => { 
     const sendButton = document.querySelector(".crud__store-button");
@@ -20,11 +16,11 @@ export  const submitForm = () => {
             console.log(pair[0]+ ', ' + pair[1]); 
         }
 
-        console.log( 'fingerprint, ' + fingerprint );
-        console.log( 'CPU, ' + CPU );
-        console.log( 'OS, ' + OS );
-        console.log( 'user Agent, ' + userAgent );
-        console.log( 'Comentario, ' + editor.getData())
+        console.log( 'fingerprint, ' + AllFingerprint.getFingerprint());
+        console.log( 'CPU, ' + AllFingerprint.getCpu());
+        console.log( 'OS, ' + AllFingerprint.getOs);
+        console.log( 'user Agent, ' + AllFingerprint.getUserAgent());
+        console.log( 'Comentario, ' + editor.getData());
     
     });
 }
