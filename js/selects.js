@@ -62,3 +62,24 @@ export const appearSelector = () => {
         }
     });
 }
+export const locationSelector = () => {
+    let selectLocation = document.querySelector("[name='localidades']");
+    let options = document.querySelectorAll(".related-options");
+    let firstOption = true;
+    
+    selectLocation.addEventListener("change", () => {
+        document.querySelector("#selectLocation").disabled = false;
+        options.forEach(element => {
+            element.classList.add("hidden-element");
+            if(selectLocation.value == element.dataset.location){
+                element.classList.remove("hidden-element"); 
+                if(firstOption){
+                    element.selected = true;
+                    firstOption = false;
+                }
+            }
+        }); 
+        firstOption = true;
+    }); 
+
+}
